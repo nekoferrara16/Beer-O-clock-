@@ -1,6 +1,9 @@
 import turtle
 import time
 from PIL import Image
+
+# --------- THIS WAS TO RESIZE THE IMAGE ---------
+
 # def resize_gif(input_image_path, output_image_path, scale_percent):
 #     image = Image.open(input_image_path)
 #     width, height = image.size
@@ -76,7 +79,7 @@ if start_time <= current_total_minutes <= end_time:
 
     # Display the percentage completion under the turtle
     turtle_position = turtle_worker.pos()  # Get current position of the turtle
-    percentage_display.goto(turtle_position[0], turtle_position[1] - 30)  # Display below the turtle
+    percentage_display.goto(turtle_position[0], turtle_position[1] - 50)  # Display below the turtle
     percentage_display.clear()  # Clear previous text
     percentage_display.write(f"{percentage_complete:.2f}% complete", align="center", font=("Arial", 12, "normal"))
 
